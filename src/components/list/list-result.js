@@ -38,10 +38,9 @@ const ListResult = ({ data }) => {
             </>
         );
     } else {
-        // You can provide an alternative JSX here if the data array is empty
         return (
             <NoItem>
-                <div style={{ fontWeight: "bold", padding: "0 2vw", backgroundColor: "white", width: "60vw", height: "12vw", borderRadius: "1vw", marginLeft: '0.5vw'}}>
+                <div style={{ fontWeight: "bold", padding: "0 2vw", backgroundColor: "white", width: "60vw", minHeight: "12vw", borderRadius: "1vw", marginLeft: '0.5vw'}}>
                 <NoItemP style={{ fontWeight: "bold", fontSize: "1.5vw", color:"green"}}>
                     검색하신 영양제들 사이의 상호작용은 확인되지 않아 복용이 가능하실 것으로 보여요!
                 </NoItemP>
