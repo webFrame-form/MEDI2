@@ -15,7 +15,7 @@
       <li>카카오 API 지도 맵 연동</li>
     </blockquote>
   </h4>
-  <h4>👉🏻 실행 방법 (필독!!!!)</h4>
+  <h4>👉🏻 실행 방법 (필독!)</h4>
 
   1. `vscode에 medi-form 폴더 불러오기`
   2. `npm install`
