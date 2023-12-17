@@ -20,7 +20,7 @@ const HomeNav = styled.div`
 const Nav = () => {
     const location = useLocation();
 
-    if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/team') {
+    if (location.pathname === '/login' || location.pathname === '/signup' || location.pathname === '/team' ) {
         return null;
     }
 
@@ -29,7 +29,9 @@ const Nav = () => {
             <NavButton buttonText="HOME" linkTo="/" />
             <NavButton buttonText="PILLS" linkTo="/pills" />
             <NavButton buttonText="CALC" linkTo="/calc" />
+            <NavButton buttonText="COMMUNITY" linkTo="/community" />
             <NavButton buttonText="LOCATION" linkTo="/location" />
+            
         </HomeNav>
     )
 }
