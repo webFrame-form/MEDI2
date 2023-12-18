@@ -3,6 +3,7 @@ const colors = {
   red: "#FF0101",
   mainBlue: "#8B9FC2",
   subBlue: "#3D5F99",
+  bannerBlue: "#004AC9",
   logoBlue: "#63ABE5",
   darkBlue: "#5295CA",
   green: "#12C338",
