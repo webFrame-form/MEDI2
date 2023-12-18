@@ -39,9 +39,18 @@ const FooterDiv = styled.div`
         `}
     }
 
-        @media (max-width: 1250px) {
+    @media (max-width: 1250px) {
         ${({ iscalc }) =>
         iscalc === "true" &&
+        `
+            position: fixed;
+            bottom: 0;
+        `}
+    } 
+
+    @media (max-width: 1000px) {
+        ${({ isUpload }) =>
+        isUpload === "true" &&
         `
             position: fixed;
             bottom: 0;
@@ -57,9 +66,10 @@ const Footer = () => {
     const issign = location.pathname === "/signup";
     const iscalc = location.pathname === "/calc";
     const isloading = location.pathname === "/loading";
+    const isUpload = location.pathname === "/upload";
 
     return (
-        <FooterDiv islogin={islogin.toString()} isteam={isteam.toString()} issign={issign.toString()} iscalc={iscalc.toString()} isloading={isloading.toString()}>
+        <FooterDiv islogin={islogin.toString()} isteam={isteam.toString()} issign={issign.toString()} iscalc={iscalc.toString()} isloading={isloading.toString()} isUpload={isUpload.toString()}>
             <img src={mediFooter} alt="footer" />
         </FooterDiv>
     );

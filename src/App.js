@@ -12,6 +12,9 @@ import Calc from "./pages/Calc";
 import Result from "./pages/Result";
 import Loc from "./pages/Loc";
 import Loading from "./pages/Loading";
+import Community from "./pages/Community";
+import Upload from "./pages/Upload";
+import Edit from "./pages/Edit";
 
 
 function App() {
@@ -31,6 +34,9 @@ function App() {
           <Route path="/result" element={<Result />} />
           <Route path="/location" element={<Loc />} />
           <Route path="/loading" element={<Loading />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/upload" element={<Upload />} />
+          <Route path="/edit" element={<Edit />} />
         </Routes>
         <Footer/>
       </Router>
