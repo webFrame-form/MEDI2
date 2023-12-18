@@ -5,7 +5,7 @@ import colors from "../../styles/colors";
 const HomeLoginButton = styled.button`
     width: 13.8rem;
     height: 4.4rem;
-    background-color: ${(props) => props.btnbgcolor || colors.mainBlue};
+    background-color: ${(props) => props.btnbgcolor || colors.logoBlue};
     border-radius: 0.8rem;
     border: none;
     font-size: 1.6rem;

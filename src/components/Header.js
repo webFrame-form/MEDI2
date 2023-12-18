@@ -15,7 +15,7 @@ const HeaderNavBar = styled.div`
 
 const Header = () => {
     const HeaderPStyle = {
-        color: colors.mainBlue,
+        color: colors.logoBlue,
         marginLeft: "2.5vw",
         fontSize: "4rem",
         fontWeight: "bold"

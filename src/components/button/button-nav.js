@@ -8,7 +8,7 @@ const NavButton = styled.div`
     background-color: ${colors.black};
     border: none;
     color: ${(props) =>
-        props.isclick === "true" ? colors.mainBlue : colors.white};
+        props.isclick === "true" ? colors.logoBlue : colors.white};
     font-size: 1.8rem;
     font-weight: 700;
     display: flex;
@@ -16,7 +16,7 @@ const NavButton = styled.div`
     justify-content: center;
 
     &:hover {
-        color: ${colors.mainBlue};
+        color: ${colors.logoBlue};
     }
 `;
 

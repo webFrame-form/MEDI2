@@ -4,7 +4,7 @@ import colors from "../../styles/colors";
 const ButtonAuth = styled.button`
     width: 100%;
     height: 4vw;
-    background-color: ${colors.mainBlue};
+    background-color: ${colors.logoBlue};
     border: none;
     border-radius: 0.5vw;
     font-size: 2vw;
