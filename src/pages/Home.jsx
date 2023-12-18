@@ -4,13 +4,13 @@ import colors from "../styles/colors";
 import styled from "styled-components";
 import ListDrug from "../components/list/list-drug";
 import DrugData from "../util/drug";
-import homeBanner from "../assets/images/homeBanner.png";
 import user from "../assets/images/user.png";
 import medi from "../assets/images/medi.png";
 import mediLogo from "../assets/images/mediLogo.png";
 import calcIcon from "../assets/images/calc-icon.png";
 import locationIcon from "../assets/images/location-icon.png";
 import homeDown from "../assets/images/home-down.png";
+import Banner from "../components/banner";
 
 const HomeP = styled.p`
     color: ${colors.white};
@@ -85,15 +85,11 @@ const Home = () => {
             alignItems: "center",
             marginBottom: "5vw"
         }}>
-            <img src={homeBanner} alt="homeBanner" style={{
-                width: "100%", 
-                marginTop:"3rem"
-            }}/>
-
+            <Banner width="100%"/>
             <HomeContainer>
-                <HomeExplain>
-                    <img src={user} alt="user" style={{width: "13rem", height: "13rem"}}/>
-                    <div style={{width: "0.5rem", height: "10rem", backgroundColor: colors.white}} />
+                <HomeExplain style={{height: "6.5vw", marginTop: "3vw"}}>
+                    <img src={user} alt="user" style={{width: "6.5vw", height: "100%"}}/>
+                    <div style={{width: "0.25vw", height: "80%", backgroundColor: colors.white}} />
                     <div className="HomeExplainContainer">
                         <HomeP>임산부라 약을 먹을 때 조심해야 하는데..</HomeP>
                         <HomeP style={{ fontSize: "1.7rem", fontWeight: "bold", marginTop: "-0.5rem" }}>
@@ -102,7 +98,7 @@ const Home = () => {
                         </HomeP>
                     </div>
                 </HomeExplain>
-                <HomeExplain style={{justifyContent: "flex-end"}}>
+                <HomeExplain style={{justifyContent: "flex-end", height: "6.5vw"}}>
                     <div className="HomeExplainContainer">
                         <HomeP style={{textAlign: "right"}}>
                             의사와 상담을 추천하지만, 어렵다면 MEDI:가 도움드리겠습니다.
@@ -112,8 +108,8 @@ const Home = () => {
                             "MEDI: 성분 계산으로 여러 종류의 약을 혼합해보세요."
                         </HomeP>
                     </div>
-                    <div style={{width: "0.5rem", height: "10rem", backgroundColor: colors.white}} />
-                    <img src={medi} alt="medi" style={{width: "13rem", height: "13rem"}}/>
+                    <div style={{width: "0.25vw", height: "80%", backgroundColor: colors.white}} />
+                    <img src={medi} alt="medi" style={{width: "6.5vw", height: "6.5vw"}}/>
                 </HomeExplain>
             </HomeContainer>
 
