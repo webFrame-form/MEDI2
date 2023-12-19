@@ -12,8 +12,14 @@ const colors = {
   lightgray: "#D3D3D3",
   black: "#000000",
   white: "#ffffff",
-darkslateblue: "#484A64",
-    darkgray: "#2a2a3a",
+  darkslateblue: "#484A64",
+  darkgray: "#2a2a3a",
+  postgray: "#262626",
+  postgray2: "#959595",
+  postgray3: "#D2CDBC",
+  postgray4: "#4C4C4C",
+  postgray5: "#635E5E",
+  postgray6: "#949494",
   navy:"#949494",
 };
 

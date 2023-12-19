@@ -31,6 +31,8 @@ const ButtonNav = ({ buttonText, linkTo }) => {
         isclick = "true";
     } else if (linkTo === "/community" && location.pathname === "/edit") {
         isclick = "true";
+    } else if (linkTo === "/community" && location.pathname === "/post") {
+        isclick = "true";
     } else if (location.pathname === linkTo) {
         isclick = "true";
     }

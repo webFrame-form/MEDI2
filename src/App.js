@@ -15,6 +15,7 @@ import Loading from "./pages/Loading";
 import Community from "./pages/Community";
 import Upload from "./pages/Upload";
 import Edit from "./pages/Edit";
+import Post from "./pages/Post";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/community" element={<Community />} />
           <Route path="/upload" element={<Upload />} />
           <Route path="/edit" element={<Edit />} />
+          <Route path="/post" element={<Post />} />
         </Routes>
         <Footer/>
       </Router>
