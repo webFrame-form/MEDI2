@@ -9,7 +9,7 @@ const FooterDiv = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    margin-top: 5vw;
     background-color: ${colors.gray};
     position: ${({ islogin, isloading }) => (islogin === "true" || isloading === "true" ? "fixed" : "relative")};
     bottom: 0;
@@ -18,8 +18,6 @@ const FooterDiv = styled.div`
     & img {
         width: 33.333rem;
     }
-
-
 
     @media (max-width: 650px) {
         ${({ isteam }) =>
@@ -56,6 +54,25 @@ const FooterDiv = styled.div`
             bottom: 0;
         `}
     } 
+
+    
+    @media (max-width: 1000px) {
+        ${({ isEdit }) =>
+        isEdit === "true" &&
+        `
+            position: fixed;
+            bottom: 0;
+        `}
+    } 
+
+    @media (max-width: 900px) {
+        ${({ isPost }) =>
+        isPost === "true" &&
+        `
+            position: fixed;
+            bottom: 0;
+        `}
+    } 
 `;
 
 
@@ -67,9 +84,19 @@ const Footer = () => {
     const iscalc = location.pathname === "/calc";
     const isloading = location.pathname === "/loading";
     const isUpload = location.pathname === "/upload";
+    const isEdit = location.pathname === "/edit";
+    const isPost = location.pathname === "/post";
 
     return (
-        <FooterDiv islogin={islogin.toString()} isteam={isteam.toString()} issign={issign.toString()} iscalc={iscalc.toString()} isloading={isloading.toString()} isUpload={isUpload.toString()}>
+        <FooterDiv 
+            islogin={islogin.toString()} 
+            isteam={isteam.toString()} 
+            issign={issign.toString()} 
+            iscalc={iscalc.toString()} 
+            isloading={isloading.toString()} 
+            isUpload={isUpload.toString()} 
+            isEdit={isEdit.toString()}
+            isPost={isPost.toString()}>
             <img src={mediFooter} alt="footer" />
         </FooterDiv>
     );
